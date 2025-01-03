@@ -1,0 +1,15 @@
+.shape {
+  height: 0;
+  width: 0;
+  border-bottom: 26px solid black;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+
+.shape-big {
+  height: 0;
+  width: 0;
+  border-bottom: 52px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
