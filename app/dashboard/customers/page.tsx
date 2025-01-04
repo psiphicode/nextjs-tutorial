@@ -1,5 +1,5 @@
 import Pagination from '@/app/ui/invoices/pagination';
-import CustomersTable from '@/app/ui/customers/table.tsx';
+import CustomersTable from '@/app/ui/customers/table';
 import Search from '@/app/ui/search';
 import Table from '@/app/ui/invoices/table';
 import { CreateInvoice } from '@/app/ui/invoices/buttons';
