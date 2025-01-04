@@ -1,12 +1,15 @@
-import Pagination from '@/app/ui/invoices/pagination';
+// import Pagination from '@/app/ui/invoices/pagination';
 import CustomersTable from '@/app/ui/customers/table';
-import Search from '@/app/ui/search';
-import Table from '@/app/ui/invoices/table';
-import { CreateInvoice } from '@/app/ui/invoices/buttons';
-import { lusitana } from '@/app/ui/fonts';
-import { CustomersTableSkeleton } from '@/app/ui/skeletons';
-import { Suspense } from 'react';
-import { fetchInvoicesPages, fetchFilteredCustomers } from '@/app/lib/data';
+// import Search from '@/app/ui/search';
+// import Table from '@/app/ui/invoices/table';
+// import { CreateInvoice } from '@/app/ui/invoices/buttons';
+// import { lusitana } from '@/app/ui/fonts';
+// import { CustomersTableSkeleton } from '@/app/ui/skeletons';
+// import { Suspense } from 'react';
+import {
+  // fetchInvoicesPages,
+  fetchFilteredCustomers,
+} from '@/app/lib/data';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -24,8 +27,8 @@ export default async function Page(props: {
 
   const customers = await fetchFilteredCustomers(query);
 
-  const currentPage = Number(searchParams?.page) || 1;
-  const totalPages = await fetchInvoicesPages(query);
+  // const currentPage = Number(searchParams?.page) || 1;
+  // const totalPages = await fetchInvoicesPages(query);
 
   return (
     <div className="w-full">
